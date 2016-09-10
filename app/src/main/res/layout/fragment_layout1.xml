@@ -1,4 +1,4 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,20 +7,14 @@
 
     <!-- TODO: Update blank fragment layout -->
 
-    <android.support.constraint.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
-        <TextView
-            android:text="page1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView5"
-            android:layout_marginStart="160dp"
-            app:layout_constraintLeft_toLeftOf="@+id/constraintLayout"
-            android:layout_marginLeft="160dp"
-            android:layout_marginTop="184dp"
-            app:layout_constraintTop_toTopOf="@+id/constraintLayout" />
-    </android.support.constraint.ConstraintLayout>
-
-</FrameLayout>
+    <TextClock
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textClock"
+        android:layout_marginTop="184dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="192dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="192dp" />
+</android.support.constraint.ConstraintLayout>

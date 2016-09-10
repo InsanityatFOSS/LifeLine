@@ -13,6 +13,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 public class emergencyTab extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -80,18 +81,27 @@ public class emergencyTab extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
+
         FragmentManager fragmentManager = getSupportFragmentManager();
 
         if (id == R.id.nav_layout1) {
-            fragmentManager.beginTransaction().replace(R.id.main_frame, new layout1()).commit();
+              layout1 l1 = new layout1();
+              fragmentManager.beginTransaction().replace(R.id.main_frame, l1, l1.getTag()).commit();
+              Toast.makeText(this, "Layout1", Toast.LENGTH_SHORT).show();
 
         } else if (id == R.id.nav_layout2) {
-            fragmentManager.beginTransaction().replace(R.id.main_frame, new layout2()).commit();
+            layout2 l2 = new layout2();
+            fragmentManager.beginTransaction().replace(R.id.main_frame, l2, l2.getTag()).commit();
+            Toast.makeText(this, "Layout2", Toast.LENGTH_SHORT).show();
+
 
         } else if (id == R.id.nav_layout3) {
-            fragmentManager.beginTransaction().replace(R.id.main_frame, new layout3()).commit();
+            layout3 l3 = new layout3();
+            fragmentManager.beginTransaction().replace(R.id.main_frame, l3, l3.getTag()).commit();
+            Toast.makeText(this, "Layout3", Toast.LENGTH_SHORT).show();
 
         } else if (id == R.id.nav_share) {
+
 
         } else if (id == R.id.nav_send) {
 
