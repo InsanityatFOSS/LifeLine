@@ -3,6 +3,7 @@ package com.fossatamrita.lifeline.lifeline;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.FragmentManager;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -79,14 +80,16 @@ public class emergencyTab extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
+        FragmentManager fragmentManager = getSupportFragmentManager();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        if (id == R.id.nav_layout1) {
+            fragmentManager.beginTransaction().replace(R.id.main_frame, new layout1()).commit();
 
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.nav_layout2) {
+            fragmentManager.beginTransaction().replace(R.id.main_frame, new layout2()).commit();
 
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.nav_layout3) {
+            fragmentManager.beginTransaction().replace(R.id.main_frame, new layout3()).commit();
 
         } else if (id == R.id.nav_share) {
 
@@ -95,6 +98,7 @@ public class emergencyTab extends AppCompatActivity
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        assert drawer != null;
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
