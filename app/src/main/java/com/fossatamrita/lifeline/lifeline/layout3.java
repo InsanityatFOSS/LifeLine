@@ -7,6 +7,8 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 
 
 /**
@@ -21,6 +23,9 @@ public class layout3 extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     public layout3() {
 
+    }
+
+    private void findViewById(int webview) {
     }
 
     @Override
