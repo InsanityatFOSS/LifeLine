@@ -112,6 +112,41 @@ public class DataObject {
     public void setSex(String mText1) {
         this.sex = mText1;
     }
+    public String getAaddharId() {
+        return aaddharId;
+    }
+
+    public void setAaddharId(String mText1) {
+        this.aaddharId = mText1;
+    }
+    public String getAllergies() {
+        return allergies;
+    }
+
+    public void setAllergies(String mText1) {
+        this.allergies = mText1;
+    }
+    public String getPresciptions() {
+        return presciptions;
+    }
+
+    public void setPresciptions(String mText1) {
+        this.presciptions = mText1;
+    }
+    public String getBloodPresure() {
+        return bloodPresure;
+    }
+
+    public void setBloodPresure(String mText1) {
+        this.bloodGroup = mText1;
+    }
+    public String getPhoneNo() {
+        return phoneNo;
+    }
+
+    public void setPhoneNo(String mText1) {
+        this.phoneNo = mText1;
+    }
 
 }
 
