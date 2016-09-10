@@ -64,6 +64,55 @@ public class DataObject {
     public void setDob(String mText1) {
         this.dob = mText1;
     }
+
+    public String getAge() {
+        return age;
+    }
+
+    public void setAge(String mText1) {
+        this.age = mText1;
+    }
+
+    public String getEmailId() {
+        return emailId;
+    }
+
+    public void setEmailId(String mText1) {
+        this.emailId = mText1;
+    }
+
+    public String getBloodGroup() {
+        return bloodGroup;
+    }
+
+    public void setBloodGroup(String mText1) {
+        this.bloodGroup = mText1;
+    }
+
+    public String getSugarLevel() {
+        return sugarLevel;
+    }
+
+    public void setSugarLevel(String mText1) {
+        this.sugarLevel = mText1;
+    }
+
+    public String getMedicalIllness() {
+        return medicalIllness;
+    }
+
+    public void setMedicalIllness(String mText1) {
+        this.medicalIllness= mText1;
+    }
+
+    public String getSex() {
+        return sex;
+    }
+
+    public void setSex(String mText1) {
+        this.sex = mText1;
+    }
+
 }
 
 public class emergencyTab extends AppCompatActivity
