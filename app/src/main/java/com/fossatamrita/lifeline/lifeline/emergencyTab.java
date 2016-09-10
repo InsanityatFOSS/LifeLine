@@ -17,6 +17,55 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+public class DataObject {
+    private String name;
+    private String dob;
+    private String age;
+    private String sex;
+    private String emailId;
+    private String bloodGroup;
+    private String sugarLevel;
+    private String medicalIllness;
+    private String aaddharId;
+    private String allergies;
+    private String presciptions;
+    private String phoneNo;
+    private String bloodPresure;
+
+
+    DataObject (String text1, String text2, String text3, String text4, String text5, String text6, String text7, String text8, String text9, String text10, String text11, String text12, String text13){
+        name = text1;
+        dob = text2;
+        age = text3;
+        sex = text4;
+        emailId = text5;
+        bloodGroup = text6;
+        sugarLevel = text7;
+        medicalIllness = text8;
+        aaddharId = text9;
+        allergies = text10;
+        presciptions = text11;
+        phoneNo = text12;
+        bloodPresure = text13;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String mText1) {
+        this.name = mText1;
+    }
+
+    public String getDob() {
+        return dob;
+    }
+
+    public void setDob(String mText1) {
+        this.dob = mText1;
+    }
+}
+
 public class emergencyTab extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
