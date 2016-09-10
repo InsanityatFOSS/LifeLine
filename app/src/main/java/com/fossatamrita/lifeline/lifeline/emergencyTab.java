@@ -26,7 +26,7 @@ public class emergencyTab extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_emergency_tab);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(too+lbar);
+        setSupportActionBar(toolbar);
 
         layout1 l1 = new layout1();
         fragmentManager.beginTransaction().replace(R.id.main_frame, l1, l1.getTag()).commit();
