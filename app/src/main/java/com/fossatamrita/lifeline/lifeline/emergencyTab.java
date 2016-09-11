@@ -17,7 +17,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-public class DataObject {
+class DataObject {
     private String name;
     private String dob;
     private String age;
